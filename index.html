@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>GimmeTable</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>GimmeTable <small>A table-based viewer for <a href="https://gimmebar.com/">Gimme Bar</a> collections.</small></h1>
+        </div>
+        <div class="row">
+          <div class="span16">
+            <div id="messagebox"></div>
+            
+            <form id="collection">
+                <div class="clearfix">
+                    <label for="collection-url">URL</label>
+                    <div class="input">
+                        <input type="text" id="collection-url" value="" class="span8" />
+                        <span class="help-block">Enter the URL of a Gimme Bar collection. Examples:<br />
+                        https://gimmebar.com/loves/philipsharp/collection/gimmetable<br />
+                        https://gimmebar.com/loves/ben/collection/bourbon-neat<br />
+                        https://gimmebar.com/api/v0/public/assets/funkatron/micro-php.json
+                        </span>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label for="collection-url">Items Per Page</label>
+                    <div class="input">
+                        <select id="collection-page" class="small">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                        </div>
+                </div>
+                <div class="actions">
+                    <input type="submit" class="btn" value="Load" />
+                </div>
+            </form>
+            
+            <div id="results">
+                <p id="results-page"></p>
+                <div class="pagination">
+                  <ul>
+                    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+                    <li class="next disabled"><a href="#">Next &rarr;</a></li>
+                  </ul>
+                </div>
+                <table id="results-table" class="zebra-striped">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Source</th>
+                            <th>Gimme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                  <ul>
+                    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+                    <li class="next disabled"><a href="#">Next &rarr;</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Built by <a href="http://www.kerzap.com">Philip Sharp</a> using <a href="http://jquery.com/">jQuery</a>, <a href="http://twitter.github.com/bootstrap">Bootstrap</a>, and the <a href="https://gimmebar.com/api/v0">Gimme Bar API</a>.</p>
+      </footer>
+
+    </div>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
