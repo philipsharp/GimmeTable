@@ -74,7 +74,7 @@ $(function(){
     {
         var url = gimmebarApiBase + username;
         if (collection) url += "/" + collection;
-        url += ".js";
+        url += ".json";
         $.ajax(url, {
             cache: true,
             dataType: "jsonp",
