@@ -1,7 +1,7 @@
 $(function(){
     var gimmebarDomainRegexp = new RegExp("^(www\.)?gimmebar\.com$"),
         gimmebarBase = "https://gimmebar.com/",
-        gimmebarApiBase = gimmebarBase + "api/v0/public/assets/",
+        gimmebarApiBase = gimmebarBase + "api/v1/public/assets/",
         gimmebarViewBase = gimmebarBase + "view/",
         per_page = 20,
         username,
